@@ -79,6 +79,11 @@
             bindings = <&kp CLCK>;
             key-positions = <5 6>;
         };
+
+        ctrl_alt_cmd_p {
+            bindings = <&kp LA(LC(LG(P)))>;
+            key-positions = <3 4>;
+        };
     };
 
     macros {
@@ -103,10 +108,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-&trans  &kp Q         &kp W        &kp E         &kp R              &kp T        &kp Y        &kp U              &kp I                &kp O            &kp P            &trans
-&trans  &HRM LCTRL A  &HRM LALT S  &HRM LCMD D   &HRM LEFT_SHIFT F  &kp G        &kp H        &HRM LEFT_SHIFT J  &HRM LEFT_COMMAND K  &HRM LEFT_ALT L  &HRM LCTRL SEMI  &trans
-&trans  &kp Z         &HMLT 5 X    &kp C         &kp V              &kp B        &kp N        &kp M              &kp COMMA            &HMLT 5 DOT      &kp SLASH        &trans
-                                   &lt 7 ESCAPE  &lt 4 SPACE        &lt 3 TAB    &lt 2 ENTER  &lt 1 BACKSPACE    &lt 6 DELETE
+&trans  &kp Q         &kp W        &kp E           &kp R              &kp T          &kp Y          &kp U              &kp I                &kp O            &kp P            &trans
+&trans  &HRM LCTRL A  &HRM LALT S  &HRM LCMD D     &HRM LEFT_SHIFT F  &kp G          &kp H          &HRM LEFT_SHIFT J  &HRM LEFT_COMMAND K  &HRM LEFT_ALT L  &HRM LCTRL SEMI  &trans
+&trans  &kp Z         &HMLT 5 X    &kp C           &kp V              &kp B          &kp N          &kp M              &kp COMMA            &HMLT 5 DOT      &kp SLASH        &trans
+                                   &HMLT 7 ESCAPE  &HMLT 4 SPACE      &HMLT 3 TAB    &HMLT 2 ENTER  &HMLT 1 BACKSPACE  &HMLT 6 DELETE
             >;
         };
 
@@ -162,7 +167,7 @@
                                     &mkp MCLK       &mkp LCLK     &mkp RCLK          &mkp RCLK       &mkp LCLK       &mkp MCLK
             >;
 
-            label = "mou";
+            label = "MOUSE";
         };
 
         extended_layer {

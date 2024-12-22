@@ -39,11 +39,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ESCAPE, h: EXT}
   - {t: SPACE, h: NAV}
-  - {t: TAB, h: BASE}
-  - {t: ENTER, h: BASE}
-  - {t: BACKSPACE, h: NAV}
-  - ENTER
-  num:
+  - {t: TAB, h: SYM}
+  - {t: ENTER, h: SYM}
+  - {t: BACKSPACE, h: NUM}
+  - {t: DELETE, h: EXT}
+  NUM:
   - {t: ▽, type: trans}
   - '['
   - '9'
@@ -52,7 +52,7 @@ layers:
   - ']'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - UP
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -62,9 +62,9 @@ layers:
   - '5'
   - '4'
   - '='
-  - {t: ▽, type: trans}
   - LEFT
   - DOWN
+  - UP
   - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -84,9 +84,9 @@ layers:
   - '0'
   - '-'
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  sym:
+  SYM:
   - {t: ▽, type: trans}
   - '{'
   - (
@@ -105,10 +105,10 @@ layers:
   - '%'
   - $
   - +
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -125,7 +125,50 @@ layers:
   - {t: ▽, type: trans}
   - (
   - )
-  - _
+  - {t: _, type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  FUNC:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F9
+  - F10
+  - F11
+  - F12
+  - F18
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F5
+  - F6
+  - F7
+  - F8
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

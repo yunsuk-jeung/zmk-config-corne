@@ -27,14 +27,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Z
-  - X
+  - {t: X, h: mou}
   - C
   - V
   - B
   - N
   - M
   - ','
-  - .
+  - {t: ., h: mou}
   - /
   - {t: ▽, type: trans}
   - {t: ESCAPE, h: CST}
@@ -155,11 +155,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - UNDO
+  - CUT
+  - COPY
+  - PASTE
+  - REDO
   - F1
   - F2
   - F3
@@ -198,11 +198,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - UNDO
+  - CUT
+  - COPY
+  - PASTE
+  - REDO
   - PG UP
   - HOME
   - DEL
@@ -242,7 +242,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - UNDO
-  - CUT
+  - {t: CUT, type: held}
   - COPY
   - PASTE
   - REDO

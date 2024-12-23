@@ -67,12 +67,22 @@
 
         ctrl_alt_cmd_p {
             bindings = <&kp LA(LC(LG(P)))>;
-            key-positions = <3 4>;
+            key-positions = <15 16>;
         };
 
         f18c {
             bindings = <&kp F18>;
             key-positions = <19 20>;
+        };
+
+        search_key {
+            bindings = <&kp LG(LA(LC(F)))>;
+            key-positions = <3 4>;
+        };
+
+        scroll_key {
+            bindings = <&kp LG(LA(LS(J)))>;
+            key-positions = <14 15>;
         };
     };
 
@@ -140,7 +150,7 @@
 
         Nav {
             bindings = <
-&trans  &trans      &trans        &trans      &trans       &trans        &trans     &kp F18   &trans   &trans     &trans     &trans
+&trans  &kp ESC     &trans        &trans      &trans       &trans        &trans     &kp F18   &trans   &trans     &trans     &trans
 &trans  &kp LCTRL   &kp LEFT_ALT  &kp LCMD    &kp LSHIFT   &trans        &kp LEFT   &kp DOWN  &kp UP   &kp RIGHT  &trans     &trans
 &trans  &kp K_UNDO  &kp K_CUT     &kp K_COPY  &kp K_PASTE  &kp K_REDO    &kp PG_UP  &kp HOME  &kp DEL  &kp END    &kp PG_DN  &trans
                                   &trans      &trans       &trans        &trans     &trans    &trans

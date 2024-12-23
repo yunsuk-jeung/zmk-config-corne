@@ -117,9 +117,9 @@
 
         num {
             bindings = <
-&trans  &kp LBKT   &kp N9  &kp N8   &kp N7  &kp RBKT     &trans    &trans    &trans  &trans     &trans  &trans
-&trans  &kp SQT    &kp N6  &kp N5   &kp N4  &kp EQUAL    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans  &kp GRAVE  &kp N3  &kp N2   &kp N1  &kp BSLH     &trans    &trans    &trans  &trans     &trans  &trans
+&trans  &kp LBKT   &kp N9  &kp N8   &kp N7  &kp RBKT     &trans    &trans    &trans      &trans     &trans  &trans
+&trans  &kp SQT    &kp N6  &kp N5   &kp N4  &kp EQUAL    &kp LEFT  &kp DOWN  &kp UP      &kp RIGHT  &trans  &trans
+&trans  &kp GRAVE  &kp N3  &kp N2   &kp N1  &kp BSLH     &trans    &trans    &kp DELETE  &trans     &trans  &trans
                            &kp DOT  &kp N0  &kp MINUS    &trans    &trans    &trans
             >;
 
@@ -139,10 +139,10 @@
 
         func {
             bindings = <
-&trans  &trans      &trans        &trans      &trans       &trans        &kp F9  &kp F10  &kp F11  &kp F12  &kp F18  &trans
-&trans  &kp LCTRL   &kp LEFT_ALT  &kp LCMD    &kp LSHIFT   &trans        &kp F5  &kp F6   &kp F7   &kp F8   &trans   &trans
-&trans  &kp K_UNDO  &kp K_CUT     &kp K_COPY  &kp K_PASTE  &kp K_REDO    &kp F1  &kp F2   &kp F3   &kp F4   &trans   &trans
-                                  &trans      &trans       &trans        &trans  &trans   &trans
+&trans  &trans     &trans        &trans     &trans           &trans           &kp F9  &kp F10  &kp F11  &kp F12  &kp F18  &trans
+&trans  &kp LCTRL  &kp LEFT_ALT  &kp LCMD   &kp LSHIFT       &trans           &kp F5  &kp F6   &kp F7   &kp F8   &trans   &trans
+&trans  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(K_PASTE)  &kp LG(LS(Z))    &kp F1  &kp F2   &kp F3   &kp F4   &trans   &trans
+                                 &trans     &trans           &trans           &trans  &trans   &trans
             >;
 
             label = "FUNC";
@@ -150,10 +150,10 @@
 
         Nav {
             bindings = <
-&trans  &kp ESC     &trans        &trans      &trans       &trans        &trans     &kp F18   &trans   &trans     &trans     &trans
-&trans  &kp LCTRL   &kp LEFT_ALT  &kp LCMD    &kp LSHIFT   &trans        &kp LEFT   &kp DOWN  &kp UP   &kp RIGHT  &trans     &trans
-&trans  &kp K_UNDO  &kp K_CUT     &kp K_COPY  &kp K_PASTE  &kp K_REDO    &kp PG_UP  &kp HOME  &kp DEL  &kp END    &kp PG_DN  &trans
-                                  &trans      &trans       &trans        &trans     &trans    &trans
+&trans  &kp ESC    &trans        &trans     &trans      &trans           &trans     &kp F18   &trans   &trans     &trans     &trans
+&trans  &kp LCTRL  &kp LEFT_ALT  &kp LCMD   &kp LSHIFT  &trans           &kp LEFT   &kp DOWN  &kp UP   &kp RIGHT  &trans     &trans
+&trans  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)   &kp LG(LS(Z))    &kp PG_UP  &kp HOME  &kp DEL  &kp END    &kp PG_DN  &trans
+                                 &trans     &trans      &trans           &trans     &trans    &trans
             >;
 
             label = "NAV";

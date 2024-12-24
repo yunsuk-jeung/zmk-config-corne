@@ -1,11 +1,12 @@
 manifest:
   remotes:
-    - name: zmkfirmware
+    - name: zmk-config-corne
       url-base: https://github.com/yunsuk-jeung
+      revision: test_zmk
   projects:
-    - name: zmk
-      remote: zmkfirmware
-      revision: main
-      import: app/west.yml
+    - name: zmk-config-corne
+      remote:  https://github.com/yunsuk-jeung
+      revision: test_zmk
+      import: config/west.yml
   self:
     path: config

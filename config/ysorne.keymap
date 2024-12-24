@@ -68,6 +68,7 @@
         ctrl_alt_cmd_p {
             bindings = <&kp LA(LC(LG(P)))>;
             key-positions = <16 15>;
+            timeout-ms = <40>;
         };
 
         f18c {

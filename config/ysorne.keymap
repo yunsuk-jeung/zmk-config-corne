@@ -117,10 +117,10 @@
 
         num {
             bindings = <
-&trans  &kp LBKT   &kp N9  &kp N8   &kp N7  &kp RBKT     &trans  &trans    &kp UP      &trans     &trans  &trans
-&trans  &kp SQT    &kp N6  &kp N5   &kp N4  &kp EQUAL    &trans  &kp LEFT  &kp DOWN    &kp RIGHT  &trans  &trans
-&trans  &kp GRAVE  &kp N3  &kp N2   &kp N1  &kp BSLH     &trans  &trans    &kp DELETE  &trans     &trans  &trans
-                           &kp DOT  &kp N0  &kp MINUS    &trans  &trans    &trans
+&trans  &kp LBKT   &kp N9  &kp N8   &kp N7  &kp RBKT     &trans    &trans    &trans        &trans     &trans  &trans
+&trans  &kp SQT    &kp N6  &kp N5   &kp N4  &kp EQUAL    &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &kp GRAVE  &kp N3  &kp N2   &kp N1  &kp BSLH     &trans    &trans    &kp DELETE    &trans     &trans  &trans
+                           &kp DOT  &kp N0  &kp MINUS    &trans    &trans    &trans
             >;
 
             label = "NUM";
@@ -150,9 +150,9 @@
 
         Nav {
             bindings = <
-&trans  &kp ESC    &trans        &trans     &trans      &trans           &trans     &trans    &kp UP    &trans     &trans     &trans
-&trans  &kp LCTRL  &kp LEFT_ALT  &kp LCMD   &kp LSHIFT  &trans           &trans     &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans
-&trans  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)   &kp LG(LS(Z))    &kp PG_UP  &kp HOME  &kp DEL   &kp END    &kp PG_DN  &trans
+&trans  &kp ESC    &trans        &trans     &trans      &trans           &trans     &trans    &trans   &trans     &trans     &trans
+&trans  &kp LCTRL  &kp LEFT_ALT  &kp LCMD   &kp LSHIFT  &trans           &kp LEFT   &kp DOWN  &kp UP   &kp RIGHT  &trans     &trans
+&trans  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)   &kp LG(LS(Z))    &kp PG_UP  &kp HOME  &kp DEL  &kp END    &kp PG_DN  &trans
                                  &trans     &trans      &trans           &trans     &trans    &trans
             >;
 
@@ -161,10 +161,10 @@
 
         mouse {
             bindings = <
-&trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &msc SCRL_RIGHT    &msc SCRL_LEFT  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &msc SCRL_RIGHT  &trans
-&trans  &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans             &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans           &trans
-&trans  &trans          &trans          &trans          &trans           &trans             &trans          &trans          &trans          &trans           &trans           &trans
-                                        &mkp MCLK       &mkp LCLK        &mkp RCLK          &mkp RCLK       &mkp LCLK       &mkp MCLK
+&trans  &trans  &msc SCRL_DOWN  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans          &trans          &trans        &trans             &trans          &trans          &trans        &trans           &trans  &trans
+                                &mkp MCLK       &mkp LCLK     &mkp RCLK          &mkp RCLK       &mkp LCLK       &mkp MCLK
             >;
 
             label = "MOUSE";

@@ -1,12 +1,13 @@
 manifest:
   remotes:
-    - name: zmk-config-corne
-      url-base: https://github.com/yunsuk-jeung
-      revision: test_zmk
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    # Additional modules containing boards/shields/custom code can be listed here as well
+    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
-    - name: zmk-config-corne
-      remote:  https://github.com/yunsuk-jeung
-      revision: test_zmk
-      import: config/west.yml
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
   self:
     path: config

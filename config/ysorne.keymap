@@ -143,10 +143,10 @@
 
         func {
             bindings = <
-&trans  &trans     &trans        &trans     &trans           &trans           &kp F9  &kp F10  &kp F11  &kp F12  &kp F18  &trans
-&trans  &kp LCTRL  &kp LEFT_ALT  &kp LCMD   &kp LSHIFT       &trans           &kp F5  &kp F6   &kp F7   &kp F8   &trans   &trans
-&trans  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(K_PASTE)  &kp LG(LS(Z))    &kp F1  &kp F2   &kp F3   &kp F4   &trans   &trans
-                                 &trans     &trans           &trans           &trans  &trans   &trans
+&trans  &trans     &trans        &trans     &trans      &trans           &kp F9  &kp F10  &kp F11  &kp F12  &kp F18  &trans
+&trans  &kp LCTRL  &kp LEFT_ALT  &kp LCMD   &kp LSHIFT  &trans           &kp F5  &kp F6   &kp F7   &kp F8   &trans   &trans
+&trans  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)   &kp LG(LS(Z))    &kp F1  &kp F2   &kp F3   &kp F4   &trans   &trans
+                                 &trans     &trans      &trans           &trans  &trans   &trans
             >;
 
             label = "FUNC";

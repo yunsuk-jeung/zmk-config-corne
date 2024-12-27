@@ -67,19 +67,19 @@
 
         ctrl_alt_cmd_p {
             bindings = <&kp LA(LC(LG(P)))>;
-            key-positions = <16 15>;
+            key-positions = <16 14>;
             timeout-ms = <40>;
         };
 
         f18c {
             bindings = <&kp F18>;
-            key-positions = <19 20>;
+            key-positions = <19 21>;
             timeout-ms = <40>;
         };
 
         search_key {
             bindings = <&kp LG(LA(LC(F)))>;
-            key-positions = <14 16>;
+            key-positions = <15 12>;
             timeout-ms = <40>;
         };
 

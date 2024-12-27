@@ -67,25 +67,25 @@
 
         ctrl_alt_cmd_p {
             bindings = <&kp LA(LC(LG(P)))>;
-            key-positions = <15 16>;
+            key-positions = <15 37>;
             timeout-ms = <40>;
         };
 
         f18c {
             bindings = <&kp F18>;
-            key-positions = <20 19>;
+            key-positions = <20 40>;
             timeout-ms = <40>;
         };
 
         search_key {
             bindings = <&kp LG(LA(LC(F)))>;
-            key-positions = <16 14>;
+            key-positions = <14 37>;
             timeout-ms = <40>;
         };
 
         scroll_key {
             bindings = <&kp LG(LA(LS(J)))>;
-            key-positions = <15 14>;
+            key-positions = <16 37>;
             timeout-ms = <40>;
         };
 

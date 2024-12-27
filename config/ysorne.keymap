@@ -112,10 +112,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-&trans  &kp Q         &kp W        &kp E           &kp R              &kp T          &kp Y          &kp U              &kp I                &kp O            &kp P            &trans
-&trans  &HRM LCTRL A  &HRM LALT S  &HRM LCMD D     &HRM LEFT_SHIFT F  &kp G          &kp H          &HRM LEFT_SHIFT J  &HRM LEFT_COMMAND K  &HRM LEFT_ALT L  &HRM LCTRL SEMI  &trans
-&trans  &kp Z         &HMLT 5 X    &kp C           &kp V              &kp B          &kp N          &kp M              &kp COMMA            &HMLT 5 DOT      &kp SLASH        &trans
-                                   &HMLT 7 ESCAPE  &HMLT 4 SPACE      &HMLT 3 TAB    &HMLT 2 ENTER  &HMLT 1 BACKSPACE  &HMLT 6 DELETE
+&trans  &kp Q            &kp W            &kp E           &kp R              &kp T          &kp Y          &kp U              &kp I           &kp O            &kp P               &trans
+&trans  &HRM LEFT_GUI A  &HRM LEFT_ALT S  &HRM LCTRL D    &HRM LEFT_SHIFT F  &kp G          &kp H          &HRM LEFT_SHIFT J  &HRM LCTRL K    &HRM LEFT_ALT L  &HRM LEFT_GUI SEMI  &trans
+&trans  &kp Z            &HMLT 5 X        &kp C           &kp V              &kp B          &kp N          &kp M              &kp COMMA       &HMLT 5 DOT      &kp SLASH           &trans
+                                          &HMLT 7 ESCAPE  &HMLT 4 SPACE      &HMLT 3 TAB    &HMLT 2 ENTER  &HMLT 1 BACKSPACE  &HMLT 6 DELETE
             >;
         };
 
@@ -143,10 +143,10 @@
 
         func {
             bindings = <
-&trans  &trans     &trans        &trans     &trans      &trans           &kp F9  &kp F10  &kp F11  &kp F12  &kp F18  &trans
-&trans  &kp LCTRL  &kp LEFT_ALT  &kp LCMD   &kp LSHIFT  &trans           &kp F5  &kp F6   &kp F7   &kp F8   &trans   &trans
-&trans  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)   &kp LG(LS(Z))    &kp F1  &kp F2   &kp F3   &kp F4   &trans   &trans
-                                 &trans     &trans      &trans           &trans  &trans   &trans
+&trans  &trans        &trans        &trans     &trans      &trans           &kp F9  &kp F10  &kp F11  &kp F12  &kp F18  &trans
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHIFT  &trans           &kp F5  &kp F6   &kp F7   &kp F8   &trans   &trans
+&trans  &kp LG(Z)     &kp LG(X)     &kp LG(C)  &kp LG(V)   &kp LG(LS(Z))    &kp F1  &kp F2   &kp F3   &kp F4   &trans   &trans
+                                    &trans     &trans      &trans           &trans  &trans   &trans
             >;
 
             label = "FUNC";
@@ -154,10 +154,10 @@
 
         Nav {
             bindings = <
-&trans  &kp ESC    &trans        &trans     &trans      &trans           &trans     &trans    &trans   &trans     &trans     &trans
-&trans  &kp LCTRL  &kp LEFT_ALT  &kp LCMD   &kp LSHIFT  &trans           &kp LEFT   &kp DOWN  &kp UP   &kp RIGHT  &trans     &trans
-&trans  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)   &kp LG(LS(Z))    &kp PG_UP  &kp HOME  &kp DEL  &kp END    &kp PG_DN  &trans
-                                 &trans     &trans      &trans           &trans     &trans    &trans
+&trans  &kp ESC       &trans        &trans     &trans      &trans           &trans     &trans    &trans   &trans     &trans     &trans
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHIFT  &trans           &kp LEFT   &kp DOWN  &kp UP   &kp RIGHT  &trans     &trans
+&trans  &kp LG(Z)     &kp LG(X)     &kp LG(C)  &kp LG(V)   &kp LG(LS(Z))    &kp PG_UP  &kp HOME  &kp DEL  &kp END    &kp PG_DN  &trans
+                                    &trans     &trans      &trans           &trans     &trans    &trans
             >;
 
             label = "NAV";

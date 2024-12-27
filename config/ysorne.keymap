@@ -88,6 +88,11 @@
             key-positions = <15 14>;
             timeout-ms = <40>;
         };
+
+        ctrl_w {
+            bindings = <&kp LC(W)>;
+            key-positions = <2 3>;
+        };
     };
 
     macros {

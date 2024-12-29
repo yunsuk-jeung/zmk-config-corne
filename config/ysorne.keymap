@@ -91,7 +91,7 @@
 
         ctrl_w {
             bindings = <&kp LC(W)>;
-            key-positions = <2 3>;
+            key-positions = <8 9>;
             timeout-ms = <40>;
         };
     };

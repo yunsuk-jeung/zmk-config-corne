@@ -94,6 +94,11 @@
             key-positions = <8 9>;
             timeout-ms = <40>;
         };
+
+        underbar {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <20 21>;
+        };
     };
 
     macros {
@@ -109,6 +114,27 @@
             #binding-cells = <0>;
             bindings = <&kp G &kp I &kp T &kp SPACE &kp C &kp O &kp M &kp M &kp I &kp T &kp SPACE &kp MINUS &kp A &kp MINUS &kp M &kp SPACE &kp DQT &kp DQT &kp LEFT_ARROW>;
             label = "GIT_COMMIT";
+        };
+
+        equal_arrow: equal_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GREATER_THAN>;
+            label = "EQUAL_ARROW";
+        };
+
+        minus_arrow: minus_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GREATER_THAN>;
+            label = "MINUS_ARROW";
+        };
+
+        parentheses_and_move: parentheses_and_move {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp RIGHT>;
+            label = "PARENTHESES_AND_MOVE";
         };
     };
 
@@ -127,10 +153,10 @@
 
         num {
             bindings = <
-&trans  &kp LBKT   &kp N9  &kp N8   &kp N7  &kp RBKT     &trans    &trans    &none         &trans     &trans  &trans
-&trans  &kp SQT    &kp N6  &kp N5   &kp N4  &kp EQUAL    &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans  &kp GRAVE  &kp N3  &kp N2   &kp N1  &kp BSLH     &trans    &trans    &kp DELETE    &trans     &trans  &trans
-                           &kp DOT  &kp N0  &kp MINUS    &trans    &trans    &trans
+&trans  &kp LBKT   &kp N9  &kp N8   &kp N7  &kp RBKT     &trans    &trans        &none         &trans        &trans  &trans
+&trans  &kp SQT    &kp N6  &kp N5   &kp N4  &kp EQUAL    &kp LEFT  &kp DOWN      &kp UP_ARROW  &kp RIGHT     &trans  &trans
+&trans  &kp GRAVE  &kp N3  &kp N2   &kp N1  &kp BSLH     &trans    &minus_arrow  &kp DELETE    &minus_arrow  &trans  &trans
+                           &kp DOT  &kp N0  &kp MINUS    &trans    &trans        &trans
             >;
 
             label = "NUM";
@@ -160,10 +186,10 @@
 
         Nav {
             bindings = <
-&trans  &kp ESC       &trans        &trans     &trans      &trans           &trans     &trans    &trans   &trans     &trans     &trans
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHIFT  &trans           &kp LEFT   &kp DOWN  &kp UP   &kp RIGHT  &trans     &trans
-&trans  &kp LG(Z)     &kp LG(X)     &kp LG(C)  &kp LG(V)   &kp LG(LS(Z))    &kp PG_UP  &kp HOME  &kp DEL  &kp END    &kp PG_DN  &trans
-                                    &trans     &trans      &trans           &trans     &trans    &trans
+&trans  &kp ESC       &trans        &trans     &trans      &trans           &kp LEFT_BRACE  &kp LEFT_BRACKET  &parentheses_and_move  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHIFT  &trans           &kp LEFT        &kp DOWN          &kp UP                 &kp RIGHT          &trans           &trans
+&trans  &kp LG(Z)     &kp LG(X)     &kp LG(C)  &kp LG(V)   &kp LG(LS(Z))    &kp PG_UP       &kp HOME          &kp DEL                &kp END            &kp PG_DN        &trans
+                                    &trans     &trans      &trans           &trans          &trans            &trans
             >;
 
             label = "NAV";

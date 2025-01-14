@@ -89,8 +89,8 @@
             timeout-ms = <30>;
         };
 
-        ctrl_w {
-            bindings = <&kp LC(W)>;
+        equal_arrow {
+            bindings = <&equal_arrow>;
             key-positions = <8 9>;
             timeout-ms = <40>;
         };
@@ -98,6 +98,21 @@
         underbar {
             bindings = <&kp UNDERSCORE>;
             key-positions = <20 21>;
+        };
+
+        min-arrow {
+            bindings = <&minus_arrow>;
+            key-positions = <32 33>;
+        };
+
+        clbb {
+            bindings = <&lbb>;
+            key-positions = <7 8>;
+        };
+
+        crbb {
+            bindings = <&rbb>;
+            key-positions = <8 9>;
         };
     };
 
@@ -135,6 +150,20 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp RIGHT>;
             label = "PARENTHESES_AND_MOVE";
+        };
+
+        rbb: next_next {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_BRACKET &kp RIGHT_BRACE>;
+            label = "NEXT_NEXT";
+        };
+
+        lbb: lbb {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp LEFT_BRACE>;
+            label = "LBB";
         };
     };
 
@@ -186,10 +215,10 @@
 
         Nav {
             bindings = <
-&trans  &kp ESC       &trans        &trans     &trans      &trans           &kp LEFT_BRACE  &kp LEFT_BRACKET  &parentheses_and_move  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHIFT  &trans           &kp LEFT        &kp DOWN          &kp UP                 &kp RIGHT          &trans           &trans
-&trans  &kp LG(Z)     &kp LG(X)     &kp LG(C)  &kp LG(V)   &kp LG(LS(Z))    &kp PG_UP       &kp HOME          &kp DEL                &kp END            &kp PG_DN        &trans
-                                    &trans     &trans      &trans           &trans          &trans            &trans
+&trans  &kp ESC       &trans        &trans     &trans      &trans           &trans     &trans    &parentheses_and_move  &trans     &trans     &trans
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHIFT  &trans           &kp LEFT   &kp DOWN  &kp UP                 &kp RIGHT  &trans     &trans
+&trans  &kp LG(Z)     &kp LG(X)     &kp LG(C)  &kp LG(V)   &kp LG(LS(Z))    &kp PG_UP  &kp HOME  &kp DEL                &kp END    &kp PG_DN  &trans
+                                    &trans     &trans      &trans           &trans     &trans    &trans
             >;
 
             label = "NAV";

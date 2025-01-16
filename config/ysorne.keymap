@@ -148,7 +148,7 @@
         parentheses_and_move: parentheses_and_move {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp RIGHT>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>;
             label = "PARENTHESES_AND_MOVE";
         };
 

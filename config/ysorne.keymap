@@ -215,10 +215,10 @@
 
         Nav {
             bindings = <
-&trans  &kp ESC       &trans        &trans     &trans      &trans           &trans     &trans    &parentheses_and_move  &trans     &trans     &trans
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHIFT  &trans           &kp LEFT   &kp DOWN  &kp UP                 &kp RIGHT  &trans     &trans
-&trans  &kp LG(Z)     &kp LG(X)     &kp LG(C)  &kp LG(V)   &kp LG(LS(Z))    &kp PG_UP  &kp HOME  &kp DEL                &kp END    &kp PG_DN  &trans
-                                    &trans     &trans      &trans           &trans     &trans    &trans
+&trans  &kp ESC       &trans        &trans     &trans      &trans           &kp LEFT_BRACE  &kp LEFT_BRACKET  &parentheses_and_move  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHIFT  &trans           &kp LEFT        &kp DOWN          &kp UP                 &kp RIGHT          &trans           &trans
+&trans  &kp LG(Z)     &kp LG(X)     &kp LG(C)  &kp LG(V)   &kp LG(LS(Z))    &kp PG_UP       &kp HOME          &kp DEL                &kp END            &kp PG_DN        &trans
+                                    &trans     &trans      &trans           &trans          &trans            &trans
             >;
 
             label = "NAV";

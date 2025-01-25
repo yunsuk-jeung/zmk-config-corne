@@ -12,6 +12,12 @@
     // 21 backlight + 6 glowlight
 };
 
+&nice_view_spi{
+  mosi-pin = <17>; 
+  sck-pin = <20>;  
+  cs-gpios = <&pro_micro 22 GPIO_ACTIVE_HIGH>;
+}
+
 #define TAPPING_TERM 200
 
 / {

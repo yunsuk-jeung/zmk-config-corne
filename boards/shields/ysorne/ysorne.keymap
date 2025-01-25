@@ -8,6 +8,12 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+&nice_view_spi{
+  mosi-pin = <17>; 
+  sck-pin = <20>;  
+  cs-gpios = <&pro_micro 22 GPIO_ACTIVE_HIGH>;
+}
+
 / {
         keymap {
                 compatible = "zmk,keymap";

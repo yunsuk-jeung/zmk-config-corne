@@ -14,8 +14,8 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: ysorne_left nice_view
+    shield: ysorne_left nnice_view_adapter ice_view
   - board: nice_nano_v2
-    shield: ysorne_right nice_view
+    shield: ysorne_right nnice_view_adapter ice_view
   - board: nice_nano_v2
     shield: settings_reset

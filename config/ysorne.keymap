@@ -12,7 +12,7 @@
 
 &nice_view_spi{
   cs-gpios = <&pro_micro 22 GPIO_ACTIVE_HIGH>;
-}
+};
 
 #define TAPPING_TERM 200
 

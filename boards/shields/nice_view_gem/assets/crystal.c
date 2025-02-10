@@ -94,7 +94,7 @@ const lv_img_dsc_t crystal_00 = {
   .header.w = 126,
   .header.h = 68,
   .data_size = 1088,
-  .data = aaa_map,
+  .data = crystal_00_map,
 };
 #ifndef LV_ATTRIBUTE_IMG_CRYSTAL_01
 #define LV_ATTRIBUTE_IMG_CRYSTAL_01

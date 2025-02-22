@@ -175,7 +175,7 @@
         base_layer {
             label = "BASE";
             bindings = <
-&trans  &kp Q            &kp W            &kp E           &kp R              &kp T          &kp Y          &kp U              &kp I           &kp O            &kp P               &trans
+&trans  &kp Q            &HMLT 4 W        &kp E           &kp R              &kp T          &kp Y          &kp U              &kp I           &HMLT 1 O        &kp P               &trans
 &trans  &HRM LEFT_GUI A  &HRM LEFT_ALT S  &HRM LCTRL D    &HRM LEFT_SHIFT F  &HMLT 1 G      &kp H          &HRM LEFT_SHIFT J  &HRM LCTRL K    &HRM LEFT_ALT L  &HRM LEFT_GUI SEMI  &trans
 &trans  &kp Z            &HMLT 5 X        &kp C           &kp V              &kp B          &kp N          &kp M              &kp COMMA       &HMLT 5 DOT      &kp SLASH           &trans
                                           &HMLT 7 ESCAPE  &HMLT 4 SPACE      &HMLT 3 TAB    &HMLT 2 ENTER  &HMLT 1 BACKSPACE  &HMLT 6 DELETE

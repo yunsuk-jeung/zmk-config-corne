@@ -249,10 +249,10 @@
 
         custom {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans      &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp DELETE  &kp BACKSPACE  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans      &trans         &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans         &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp DELETE  &kp BACKSPACE  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans         &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans      &trans
             >;
 
             label = "CST";

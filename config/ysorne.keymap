@@ -38,8 +38,8 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <215>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <190>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41>;
             hold-trigger-on-release;
@@ -52,6 +52,19 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+            quick-tap-ms = <190>;
+            flavor = "tap-preferred";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41>;
+        };
+
+        HMLT2: HMLT2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMLT2";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <215>;
             quick-tap-ms = <200>;
             flavor = "tap-preferred";
             hold-trigger-on-release;
@@ -175,7 +188,7 @@
         base_layer {
             label = "BASE";
             bindings = <
-&trans  &kp Q            &HMLT 7 W        &HMLT 4 E       &HMLT 3 R          &kp T          &kp Y          &HMLT 2 U          &HMLT 1 I       &HMLT 6 O        &kp P               &trans
+&trans  &kp Q            &HMLT2 7 W       &HMLT2 4 E      &HMLT2 3 R         &kp T          &kp Y          &HMLT2 2 U         &HMLT2 1 I      &HMLT2 6 O       &kp P               &trans
 &trans  &HRM LEFT_GUI A  &HRM LEFT_ALT S  &HRM LCTRL D    &HRM LEFT_SHIFT F  &kp G          &kp H          &HRM LEFT_SHIFT J  &HRM LCTRL K    &HRM LEFT_ALT L  &HRM LEFT_GUI SEMI  &trans
 &trans  &kp Z            &HMLT 5 X        &kp C           &kp V              &kp B          &kp N          &kp M              &kp COMMA       &HMLT 5 DOT      &kp SLASH           &trans
                                           &HMLT 7 ESCAPE  &HMLT 4 SPACE      &HMLT 3 TAB    &HMLT 2 ENTER  &HMLT 1 BACKSPACE  &HMLT 6 DELETE

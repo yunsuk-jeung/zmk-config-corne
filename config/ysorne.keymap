@@ -230,10 +230,10 @@
 
         Nav {
             bindings = <
-&trans  &kp ESC          &kp ESC          &trans        &trans         &trans           &kp LEFT_BRACE  &kp LEFT_BRACKET  &parentheses_and_move  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans
-&trans  &HRM LEFT_GUI A  &HRM LEFT_ALT S  &HRM LCTRL D  &HRM LSHIFT F  &trans           &kp LEFT        &kp DOWN          &kp UP                 &kp RIGHT          &trans           &trans
-&trans  &kp LG(Z)        &kp LG(X)        &kp LG(C)     &kp LG(V)      &kp LG(LS(Z))    &kp PG_UP       &kp HOME          &kp DEL                &kp END            &kp PG_DN        &trans
-                                          &trans        &trans         &trans           &trans          &trans            &trans
+&trans  &kp ESC          &kp ESC          &trans        &trans         &trans           &trans     &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_BRACKET  &trans     &trans
+&trans  &HRM LEFT_GUI A  &HRM LEFT_ALT S  &HRM LCTRL D  &HRM LSHIFT F  &trans           &kp LEFT   &kp DOWN          &kp UP                &kp RIGHT          &trans     &trans
+&trans  &kp LG(Z)        &kp LG(X)        &kp LG(C)     &kp LG(V)      &kp LG(LS(Z))    &kp PG_UP  &kp HOME          &kp DEL               &kp END            &kp PG_DN  &trans
+                                          &trans        &trans         &trans           &trans     &trans            &trans
             >;
 
             label = "NAV";
@@ -262,10 +262,10 @@
 
         custom {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT_BRACE  &kp LBKT    &parentheses_and_move  &kp RIGHT_BRACKET     &kp RIGHT_BRACE        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &kp DELETE  &kp BACKSPACE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans      &trans                 &trans                &trans                 &trans
-                        &trans  &trans  &trans    &trans          &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_BRACE  &parentheses_and_move  &kp RIGHT_BRACE       &trans                 &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp DELETE      &kp BACKSPACE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans                 &trans                &trans                 &trans
+                        &trans  &trans  &trans    &trans  &trans          &trans
             >;
 
             label = "CST";

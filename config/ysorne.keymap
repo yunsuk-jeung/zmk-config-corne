@@ -127,6 +127,11 @@
             bindings = <&rbb>;
             key-positions = <8 9>;
         };
+
+        esc_combo {
+            bindings = <&kp ESCAPE>;
+            key-positions = <2 3>;
+        };
     };
 
     macros {

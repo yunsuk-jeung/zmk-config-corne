@@ -118,11 +118,6 @@
             key-positions = <32 33>;
         };
 
-        clbb {
-            bindings = <&lbb>;
-            key-positions = <7 8>;
-        };
-
         crbb {
             bindings = <&rbb>;
             key-positions = <8 9>;

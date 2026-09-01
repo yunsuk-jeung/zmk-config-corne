@@ -97,13 +97,6 @@
             timeout-ms = <30>;
         };
 
-        equal_arrow {
-            bindings = <&equal_arrow>;
-            key-positions = <8 9>;
-            timeout-ms = <40>;
-            layers = <7>;
-        };
-
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <8 9>;

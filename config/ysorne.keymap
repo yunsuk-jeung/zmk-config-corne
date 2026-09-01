@@ -101,7 +101,7 @@
         };
 
         f18 {
-            bindings = <&kp F18>;
+            bindings = <&kp UNDERSCORE>;
             key-positions = <32 33>;
         };
 

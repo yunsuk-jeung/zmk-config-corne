@@ -76,14 +76,14 @@
             key-positions = <1 2>;
         };
 
-        space {
-            bindings = <&kp SPACE>;
+        dash {
+            bindings = <&kp MINUS>;
             key-positions = <15 16>;
             timeout-ms = <30>;
         };
 
-        enter {
-            bindings = <&kp ENTER>;
+        underbar {
+            bindings = <&kp UNDERSCORE>;
             key-positions = <19 20>;
             timeout-ms = <30>;
             layers = <0>;
@@ -98,11 +98,6 @@
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <8 9>;
-        };
-
-        f18 {
-            bindings = <&kp UNDERSCORE>;
-            key-positions = <32 33>;
         };
 
         esc_combo {
@@ -205,9 +200,9 @@
 
         num {
             bindings = <
-&trans  &kp BACKSLASH  &kp N9  &kp N8   &kp N7  &kp EQUAL    &trans    &trans    &trans        &trans     &trans  &trans
+&trans  &kp BACKSLASH  &kp N9  &kp N8   &kp N7  &kp PLUS     &trans    &trans    &trans        &trans     &trans  &trans
 &trans  &kp SQT        &kp N6  &kp N5   &kp N4  &kp MINUS    &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans  &kp GRAVE      &kp N3  &kp N2   &kp N1  &kp N0       &trans    &trans    &kp DELETE    &trans     &trans  &trans
+&trans  &kp GRAVE      &kp N3  &kp N2   &kp N1  &kp EQUAL    &trans    &trans    &kp DELETE    &trans     &trans  &trans
                                &kp DOT  &kp N0  &kp MINUS    &trans    &trans    &trans
             >;
 
@@ -216,10 +211,10 @@
 
         sym {
             bindings = <
-&trans  &kp PIPE   &kp LPAR   &kp STAR   &kp AMPS  &kp PLUS                 &trans    &trans    &none   &trans     &trans  &trans
-&trans  &kp DQT    &kp CARET  &kp PRCNT  &kp DLLR  &kp UNDERSCORE           &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans  &kp TILDE  &kp POUND  &kp AT     &kp EXCL  &kp RIGHT_PARENTHESIS    &trans    &trans    &trans  &trans     &trans  &trans
-                              &kp LPAR   &kp RPAR  &kp UNDER                &trans    &trans    &trans
+&trans  &kp PIPE   &kp LPAR   &kp STAR   &kp AMPS  &kp PLUS          &trans    &trans    &none   &trans     &trans  &trans
+&trans  &kp DQT    &kp CARET  &kp PRCNT  &kp DLLR  &kp UNDERSCORE    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans  &kp TILDE  &kp POUND  &kp AT     &kp EXCL  &kp EQUAL         &trans    &trans    &trans  &trans     &trans  &trans
+                              &kp LPAR   &kp RPAR  &kp UNDER         &trans    &trans    &trans
             >;
 
             label = "SYM";

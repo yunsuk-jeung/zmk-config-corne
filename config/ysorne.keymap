@@ -104,6 +104,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <2 3>;
         };
+
+        del {
+            bindings = <&kp DELETE>;
+            key-positions = <7 8>;
+        };
     };
 
     macros {

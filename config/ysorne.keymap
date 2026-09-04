@@ -72,19 +72,19 @@
         compatible = "zmk,combos";
 
         Capslock {
-            bindings = <&kp CLCK>;
-            key-positions = <1 2>;
+            bindings = <&kp SPACE>;
+            key-positions = <15 16>;
         };
 
         dash {
             bindings = <&kp MINUS>;
-            key-positions = <15 16>;
+            key-positions = <19 20>;
             timeout-ms = <30>;
         };
 
         underbar {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <19 20>;
+            key-positions = <20 21>;
             timeout-ms = <30>;
             layers = <0>;
         };
